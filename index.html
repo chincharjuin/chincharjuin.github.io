@@ -1,123 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <title>Char Juin Chin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-    li {
-      padding-left: min(50px, 2%);
-      padding-right: min(50px, 2%);
-    }
-
-    body,
-    html {
-      height: 100%;
-      overflow: scroll;
-    }
-
-    .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/large/cover_about-me.jpg");
-      height: 30%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }
-
-    .hero-text {
-      text-align: center;
-      font-size: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
-  </style>
+  <title>Char Juin Chin — Senior Data Scientist &amp; AI Engineer</title>
+  <meta name="description" content="Char Juin Chin is a Senior Data Scientist and AI Engineer at Singapore Airlines, building agentic AI harnesses, retrieval systems, and evaluation infrastructure for production GenAI applications.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#fff5f8">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chincharjuin.github.io/">
+  <meta property="og:title" content="Char Juin Chin — Senior Data Scientist &amp; AI Engineer">
+  <meta property="og:description" content="Building the agentic harnesses, retrieval systems, and evaluation infrastructure that make frontier AI reliable in production.">
+  <meta property="og:image" content="https://chincharjuin.github.io/assets/images/og-card.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body style="background-color: #f0e6e4; font-family: Helvetica">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">Char Juin Chin</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size:min(7vw, 70px)">Char Juin Chin</h1>
-      <p style="font-size:min(3vw, 30px)">University of California, Berkeley</p>
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <p class="hero-location">
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>
+      Singapore-based
+    </p>
+    <h1>Char Juin Chin</h1>
+    <p class="hero-role">Senior Data Scientist &amp; AI Engineer</p>
+    <p class="hero-tagline">I build the agentic harnesses, retrieval systems, and evaluation infrastructure that make frontier AI reliable in production — end-to-end, from POC to enterprise scale.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="assets/pdf/chincharjuin_resume.pdf">Resume (PDF)</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/chincharjuin" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="mailto:chincharjuin@berkeley.edu">Email me</a>
     </div>
   </div>
+</section>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="about-me.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="publications.html">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/chincharjuin">Repositories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assets/pdf/chincharjuin_resume.pdf">Resume</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<main>
 
-  <div class="container" style="margin-top:30px; text-align:left; margin-bottom:80px; width:80%">
-    <div class="row">
-      <div>
-        <h1><b>Welcome</b></h1>
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <figure class="about-photo">
+        <img src="assets/images/personal/chincharjuin.jpg" alt="Portrait of Char Juin Chin">
+      </figure>
+      <div class="about-text">
+        <p class="overline">About</p>
+        <h2 class="section-title">A little about me</h2>
         <p>
-          I am a sophomore taking a BA in Computer Science and Linguistics at University of California, Berkeley. As an aspiring software engineer and data scientist with a strong interest in Natural Language Processing, I desire to contribute in the
-          fields of machine translation, semantic analysis, and speech processing.
+          I'm Char Juin — a senior data scientist at Singapore Airlines, where I own the end-to-end development and deployment of multiple customer-facing and internal GenAI applications. My work spans the full stack of applied AI: agent harnesses with code execution and graph-based memory, retrieval infrastructure that keeps public chatbots fast and accurate, and the evaluation systems that keep all of it trustworthy.
         </p>
         <p>
-          Previous work and research experience include two internships with Singapore Airlines and a publication in the 2017 IEEE Region 10 Conference.
+          I studied Computer Science and Linguistics at UC Berkeley (BA, 4.0 GPA, Dean's List). My path into NLP started with a 2017 IEEE TENCON paper on punctuation prediction, continued through gesture-annotation research in Berkeley's Linguistics Research Apprenticeship Practicum, and carried on into building document pipelines for nuclear science literature at NucScholar.
         </p>
-        <br>
+        <p>
+          Beyond engineering I like to lead — I advise Singapore Airlines' Group CEO as part of a reverse-mentoring programme, mentor interns who ship production features, and have emceed the company's annual business meeting. I'm trilingual (English, Chinese, Japanese); in my free time I enjoy running, hiking, brewing coffee, playing guitar, and tinkering with a personal Kubernetes cluster and open-weight models.
+        </p>
       </div>
     </div>
+  </section>
+
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="overline">Experience</p>
+      <h2 class="section-title">Where I've worked</h2>
+
+      <ol class="timeline">
+
+        <li class="tl-entry tl-main">
+          <div class="tl-head">
+            <h3>Singapore Airlines — Senior Data Scientist</h3>
+            <span class="tl-date">Sep 2024 – Present</span>
+          </div>
+          <p class="tl-sub">Data Analytics, Information Technology Division</p>
+
+          <h4 class="pillar">Enterprise Evaluation Platform</h4>
+          <ul>
+            <li>Led end-to-end development from POC to production on AWS of the enterprise evaluation platform: deterministic code-based checks, historical data comparisons, and LLM-as-a-judge evaluations for the production agent fleet.</li>
+            <li>Built the React/Vite frontend (Tanstack Router &amp; Query, Tailwind, Shadcn) so business users can author custom evaluation suites in natural language; FastAPI + Pydantic backend with LangGraph orchestration and PostgreSQL persistence.</li>
+            <li>Implemented the internal use-case registry, integrated with the LiteLLM gateway and SigNoz telemetry, enabling cost/latency observability and span-level tracing across enterprise GenAI applications.</li>
+            <li>Developed an SDK for centralised guardrail management and metrics monitoring, supporting sensitive-data applications.</li>
+          </ul>
+
+          <h4 class="pillar">Agentic Acceleration</h4>
+          <ul>
+            <li>Designed asynchronous tool execution via webhooks in the internal agentic harness (Google ADK), enabling long-running tools.</li>
+            <li>Prototyped an agentic memory layer that autonomously explores databases (Apache AGE) and performs staff outreach to fill context gaps, reducing silos and preserving institutional knowledge.</li>
+            <li>Built agent skills for local testing environments (Ministack AWS emulation + internal LLM gateway); designed a framework for evaluating coding models and harnesses using SonarQube static analysis with LLM-based evaluations.</li>
+            <li>Prototyped a voice-to-voice chatbot (Gemini) guiding staff through IAM password resets; ran build-vs-buy analysis across 6 vendor agentic/evaluation solutions and presented findings to management.</li>
+          </ul>
+
+          <h4 class="pillar">Customer-Facing Applications</h4>
+          <ul>
+            <li>Own the knowledge base underpinning the public customer-facing chatbot: OpenSearch hybrid search with boosting and BGE embedding/reranking; on-call engineer for P0 readiness and severity-1 incidents.</li>
+            <li>Automated knowledge-base ingestion with semantic chunking and contextualisation (DynamoDB persistence, Splunk alerting), replacing weeks of manual effort with a daily automated pipeline.</li>
+            <li>Developed Smart Search, a RAG-based search engine built on Qdrant and BM25 with Datadog monitoring; built a web portal for business users to self-service testing and updates of the non-production knowledge base.</li>
+          </ul>
+
+          <h4 class="pillar">Internal Productivity</h4>
+          <ul>
+            <li>Spearheaded a DAG-based workflow that turns natural-language queries into insights on real-time customer feedback, dramatically reducing analysis turnaround.</li>
+            <li>Led migration of a GenAI topic-discovery application from EC2 to Lambda, cutting infrastructure cost while retaining high availability and improving scalability; built local testing environments supporting an MLOps pipeline for Lambda orchestration.</li>
+            <li>Fine-tuned open-weight SLMs with Unsloth and PyTorch for on-premise customer feedback classification.</li>
+          </ul>
+
+          <h4 class="pillar">Leadership &amp; Beyond</h4>
+          <ul>
+            <li>Advising the Group CEO as part of a reverse-mentoring programme on frontier AI and business impact; championed an agentic identity solution connecting tools, databases, and agents.</li>
+            <li>Mentored 5 interns in system design and domain knowledge, enabling them to independently own and deliver production features.</li>
+            <li>Member of the interviewing committee for data scientist and software engineer hires.</li>
+            <li>Cybersecurity liaison: advised on enterprise-wide guardrails and evaluations to detect and prevent GenAI-based attacks; secure coding harnesses locally and on the cloud.</li>
+            <li>Emceed the 102nd Singapore Airlines Business Meeting, introducing members of the C-suite to over 2,000 staff and business partners; led the 17-member Fun Club as president, planning cultural celebrations for our 600-strong department.</li>
+          </ul>
+        </li>
+
+        <li class="tl-entry">
+          <div class="tl-head">
+            <h3>Freelance Developer — Total Wellness Initiative Singapore</h3>
+            <span class="tl-date">Aug 2024 – Dec 2024</span>
+          </div>
+          <ul>
+            <li>Built a full-stack web app (Next.js, Mantine, Firebase) gamifying wellness habits for a social enterprise's pilot programme; since adopted for full-product development.</li>
+          </ul>
+        </li>
+
+        <li class="tl-entry">
+          <div class="tl-head">
+            <h3>Student Researcher — NucScholar, Nuclear Data Group</h3>
+            <span class="tl-date">Sep 2021 – May 2023</span>
+          </div>
+          <ul>
+            <li>Built multi-class and multi-label classification and document vectorisation pipelines for nuclear science literature using Latent Semantic Analysis and Latent Dirichlet Allocation (Gensim, NLTK).</li>
+            <li>Presented findings to over 50 attendees at the 2022 Division of Nuclear Physics conference.</li>
+          </ul>
+        </li>
+
+        <li class="tl-entry">
+          <div class="tl-head">
+            <h3>Linguistics Research Apprentice Practicum — UC Berkeley</h3>
+            <span class="tl-date">Undergraduate research</span>
+          </div>
+          <ul>
+            <li>Annotated over 200 television clips with gesture annotations in ELAN to support co-speech gesture research in discourse.</li>
+          </ul>
+        </li>
+
+        <li class="tl-entry">
+          <div class="tl-head">
+            <h3>Music Director — Nikkei Choral Ensemble, UC Berkeley</h3>
+            <span class="tl-date">May 2023 – May 2024</span>
+          </div>
+          <ul>
+            <li>Directed a 14-member a cappella group across two semesters: leading practices, budgeting, communications, and event planning.</li>
+            <li>Developed a web application using Stable Matching to transparently allocate solos via ranked-choice voting — still used by three subsequent leadership teams.</li>
+          </ul>
+        </li>
+
+        <li class="tl-entry">
+          <div class="tl-head">
+            <h3>Education — University of California, Berkeley</h3>
+            <span class="tl-date">Aug 2020 – May 2024</span>
+          </div>
+          <ul>
+            <li>BA in Computer Science and Linguistics — 4.0 GPA, Dean's List.</li>
+            <li>CS coursework: machine learning, NLP, databases, efficient algorithms, data structures, computer security. Linguistics coursework: phonetics, syntax, sociolinguistics, quantitative methods, Japanese translation.</li>
+          </ul>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="overline">Projects</p>
+      <h2 class="section-title">Highlights from the last few years</h2>
+      <p class="section-lede">The systems I'm most proud of — what they do, and what they're built with.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Enterprise Evaluation Platform</h3>
+          <p>POC to production on AWS: deterministic code checks, historical comparisons, and LLM-as-a-judge evaluations for the enterprise agent fleet — with a natural-language frontend so business users can build their own evaluation suites.</p>
+          <ul class="chips"><li>React</li><li>Vite</li><li>FastAPI</li><li>LangGraph</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="card">
+          <h3>Agentic Harness &amp; Memory</h3>
+          <p>Asynchronous tool execution via webhooks on Google ADK, an Apache AGE-based memory layer that autonomously explores databases and fills context gaps, and local testing environments for development teams.</p>
+          <ul class="chips"><li>Google ADK</li><li>MCP</li><li>Apache AGE</li><li>Ministack</li></ul>
+        </article>
+
+        <article class="card">
+          <h3>Chatbot Knowledge Base</h3>
+          <p>The retrieval layer behind Singapore Airlines' public customer-facing chatbot: hybrid search, boosting, and reranking — with automated semantic ingestion that replaced weeks of manual effort.</p>
+          <ul class="chips"><li>OpenSearch</li><li>BGE</li><li>DynamoDB</li><li>Splunk</li></ul>
+        </article>
+
+        <article class="card">
+          <h3>Customer Feedback Intelligence</h3>
+          <p>A DAG-based workflow that turns natural-language queries into insights on real-time customer feedback, backed by fine-tuned open-weight SLMs for on-premise classification.</p>
+          <ul class="chips"><li>DAG workflows</li><li>Unsloth</li><li>PyTorch</li></ul>
+        </article>
+
+        <article class="card">
+          <h3>Secure GenAI Guardrails</h3>
+          <p>Cybersecurity liaison work: enterprise-wide guardrails and evaluations to detect and prevent GenAI-based attacks, with secure coding harnesses deployed locally and on the cloud.</p>
+          <ul class="chips"><li>Guardrail SDK</li><li>SonarQube</li></ul>
+        </article>
+
+        <article class="card">
+          <h3>Personal K8s Lab</h3>
+          <p>A 3-node Proxmox cluster with OpenTelemetry/VictoriaMetrics/Grafana observability, vLLM + Unsloth for open-weight models, Forgejo CI/CD — and an open-source Rust-based agent memory layer in development.</p>
+          <ul class="chips"><li>Kubernetes</li><li>vLLM</li><li>Rust</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="overline">Skills</p>
+      <h2 class="section-title">Tools of the trade</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="chips"><li>React</li><li>Tanstack Router / Query</li><li>Shadcn</li><li>Tailwind</li><li>Mantine</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="chips"><li>FastAPI</li><li>Pydantic</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <ul class="chips"><li>PostgreSQL</li><li>Apache AGE</li><li>DynamoDB</li><li>Redis</li><li>Qdrant</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Agentic AI</h3>
+          <ul class="chips"><li>LangGraph</li><li>Google ADK</li><li>RAG</li><li>MCP</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Observability</h3>
+          <ul class="chips"><li>SigNoz</li><li>OpenTelemetry</li><li>Datadog</li><li>Splunk</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <ul class="chips"><li>Python</li><li>TypeScript</li><li>SQL</li><li>HTML</li><li class="chip-learn">learning: Rust</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Environments</h3>
+          <ul class="chips"><li>AWS</li><li>Kubernetes</li><li>Docker</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Spoken Languages</h3>
+          <ul class="chips"><li>English (native)</li><li>Chinese (native)</li><li>Japanese (conversational)</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="container pub-grid">
+      <article class="pub-card">
+        <p class="overline">Publication</p>
+        <h3>Punctuation prediction using a bidirectional recurrent neural network with part-of-speech tagging</h3>
+        <p class="pub-authors">Chin, C.J., Wei, R., D'Haro, L. &amp; Banchs, R.</p>
+        <p class="pub-venue">IEEE TENCON 2017 — IEEE Region 10 Conference, 2017, pp. 1806–1811 · <a href="https://ieeexplore.ieee.org/document/8228151" target="_blank" rel="noopener">doi: 10.1109/TENCON.2017.8228151</a></p>
+        <p class="pub-note">Research at A*STAR's Institute for Infocomm Research: a bidirectional recurrent neural network in TensorFlow with an attention mechanism, biased decoding, and part-of-speech tagging — improving punctuation prediction accuracy over prior state of the art.</p>
+      </article>
+      <div class="awards">
+        <p class="overline">Recognition</p>
+        <h3>Awards &amp; scholarships</h3>
+        <ul>
+          <li><strong>Singapore Airlines Open Overseas Scholarship</strong> — Jul 2019. One of two recipients of Singapore Airlines' premier full-ride overseas scholarship, in recognition of outstanding academic and extra-curricular performance.</li>
+          <li><strong>Undergraduate Research Apprenticeship Program Summer Fellow</strong> — Summer 2022. Anselm MPS Fund sponsorship to perform research, in recognition of contributions to the NucScholar project.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-name">Char Juin Chin</p>
+    <ul class="footer-links">
+      <li>
+        <a href="mailto:chincharjuin@berkeley.edu">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          chincharjuin@berkeley.edu
+        </a>
+      </li>
+      <li><a href="https://www.linkedin.com/in/chincharjuin" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/chincharjuin" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <p class="footer-note">Singapore · <a href="https://chincharjuin.github.io/">chincharjuin.github.io</a></p>
   </div>
-
-</body>
-
-<footer style="position: relative; left: 0; bottom: 0; width: 100%; color: white; text-align: center; height:80px; line-height:80px">
-  <ul style="display:flex; list-style:none; justify-content:center; padding:0">
-    <li>
-      <a href="https://www.linkedin.com/in/charjuinchin/" target="_blank">
-        <img class="logo" src="assets/images/icons/linkedin.png" alt="" width=50px>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/charjuinchin/" target="_blank">
-        <img class="logo" src="assets/images/icons/facebook.png" alt="" width=50px>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/chincharjuin/" target="_blank">
-        <img class="logo" src="assets/images/icons/instagram.png" alt="" width=43px>
-      </a>
-    </li>
-    <li>
-      <a href="mailto:chincharjuin@berkeley.edu" target="_blank">
-        <img class="logo" src="assets/images/icons/email.png" alt="" width=50px>
-      </a>
-    </li>
-  </ul>
 </footer>
 
+</body>
 </html>
