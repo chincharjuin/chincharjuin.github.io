@@ -2,6 +2,8 @@
    SITE.JS — renders the page from window.CONTENT (content.js)
    and handles the theme toggle. All presentation lives in
    assets/css/style.css. Edit words in content.js, not here.
+   (Page <head> metadata is static in index.html — do not
+   touch it here; crawlers read the HTML, not the DOM.)
    ============================================================ */
 (function () {
   "use strict";
@@ -17,15 +19,6 @@
   /* External links open in a new tab */
   function ext(href) {
     return /^https?:/i.test(href) ? ' target="_blank" rel="noopener"' : "";
-  }
-
-  /* ---------- page metadata ---------- */
-  if (C.meta && C.meta.title) document.title = C.meta.title;
-  if (C.meta && C.meta.description) {
-    var d = document.querySelector('meta[name="description"]');
-    if (d) d.setAttribute("content", C.meta.description);
-    var og = document.querySelector('meta[property="og:description"]');
-    if (og) og.setAttribute("content", C.meta.description);
   }
 
   /* ---------- theme toggle ---------- */

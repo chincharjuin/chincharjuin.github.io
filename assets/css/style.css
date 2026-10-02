@@ -11,9 +11,10 @@
   --ink: #2a1622;
   --muted: #7d5e6f;
   --pink: #d93a80;
+  --pink-deep: #c22b6e; /* surface pink: >=4.5:1 with --on-pink text */
   --on-pink: #fff5f9;
   --accent: #c22b6e;
-  --line: #ecd2de;
+  --line: #a86f8d;
   --footer-bg: #2a1622;
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -25,6 +26,7 @@ html[data-theme="dark"] {
   --ink: #fbeaf2;
   --muted: #b78fa1;
   --pink: #d93a80;
+  --pink-deep: #c22b6e;
   --on-pink: #fff5f9;
   --accent: #ef7fb4;
   --line: #3d2230;
@@ -67,6 +69,12 @@ a:focus-visible, button:focus-visible {
 }
 
 section[id] { scroll-margin-top: 84px; }
+
+/* At <=760px the sticky header wraps to two rows (~104px + borders),
+   so anchors need a taller offset not to tuck under it. */
+@media (max-width: 760px) {
+  section[id] { scroll-margin-top: 120px; }
+}
 
 .noscript {
   padding: 20px clamp(20px, 5vw, 48px);
@@ -151,7 +159,7 @@ section[id] { scroll-margin-top: 84px; }
 }
 
 .nav-cta {
-  background: var(--pink);
+  background: var(--pink-deep);
   color: #fff !important;
   padding: 8px 14px;
   font-weight: 600;
@@ -252,7 +260,7 @@ html[data-theme="dark"] .icon-sun { display: none; }
 }
 
 .btn-primary {
-  background: var(--pink);
+  background: var(--pink-deep);
   color: #fff;
   border: 2px solid var(--ink);
   box-shadow: 5px 5px 0 var(--ink);
@@ -280,12 +288,13 @@ html[data-theme="dark"] .icon-sun { display: none; }
 
 .section { padding: clamp(64px, 9vw, 110px) 0; }
 
-/* Full-bleed flat pink block: overrides local tokens for descendants */
+/* Full-bleed flat pink block: overrides local tokens for descendants.
+   Deep pink so all text sizes clear 4.5:1 (WCAG AA). */
 .block-pink {
-  background: var(--pink);
+  background: var(--pink-deep);
   color: var(--on-pink);
-  --muted: rgba(255, 245, 249, 0.78);
-  --line: rgba(255, 245, 249, 0.35);
+  --muted: var(--on-pink);
+  --line: rgba(255, 245, 249, 0.72);
   --accent: var(--on-pink);
 }
 
@@ -338,7 +347,7 @@ html[data-theme="dark"] .icon-sun { display: none; }
   gap: 36px 48px;
 }
 .offclock-grid li {
-  border-top: 2px solid rgba(255, 245, 249, 0.5);
+  border-top: 2px solid rgba(255, 245, 249, 0.72);
   padding-top: 18px;
 }
 .offclock-grid h3 {
@@ -351,7 +360,7 @@ html[data-theme="dark"] .icon-sun { display: none; }
 .offclock-grid p {
   margin: 0;
   line-height: 1.65;
-  color: rgba(255, 245, 249, 0.85);
+  color: var(--on-pink);
 }
 
 /* ---------- Experience ---------- */
@@ -543,7 +552,7 @@ html[data-theme="dark"] .icon-sun { display: none; }
 }
 
 .block-pink .chips li {
-  border-color: rgba(255, 245, 249, 0.55);
+  border-color: rgba(255, 245, 249, 0.72);
   color: var(--on-pink);
 }
 
@@ -732,3 +741,4 @@ html[data-theme="dark"] .icon-sun { display: none; }
 @media (max-width: 640px) {
   .tl-date { margin-left: 0; }
 }
+

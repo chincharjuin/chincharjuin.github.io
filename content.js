@@ -1,5 +1,9 @@
 /* ============================================================
-   CONTENT.JS — every word on this site lives in this file.
+   CONTENT.JS — every word in the page body lives in this file.
+
+   Page metadata (tab title, meta description, Open Graph) lives
+   in index.html on purpose: crawlers read the static HTML, not
+   the JS-rewritten DOM. Edit it THERE, not here.
 
    HOW TO EDIT
    - Change the text between the quotes/backticks, save, refresh.
@@ -20,12 +24,6 @@
 
 window.CONTENT = {
 
-  /* ---------- Page metadata (browser tab + social share cards) ---------- */
-  meta: {
-    title: "Char Juin Chin · Senior Data Scientist & AI Engineer",
-    description: "Char Juin Chin builds production GenAI systems at Singapore Airlines — agents, retrieval, and evaluation. Also: choir, guitar, hiking, coffee.",
-  },
-
   /* ---------- Navigation (top bar) ---------- */
   nav: [
     { label: "About", href: "#about" },
@@ -45,7 +43,7 @@ window.CONTENT = {
     org: "Singapore Airlines",
     tagline: `I build production GenAI systems end to end — agents that can run code and remember things, retrieval for a public chatbot, and the evaluation infrastructure that keeps them trustworthy. Off the clock: choir, guitar, hiking trails, and a home Kubernetes cluster.`,
     photo: {
-      src: "assets/images/personal/chincharjuin.jpg", // options: chincharjuin.jpg (5.8MB), chincharjuin2.jpg (8.3MB), sidebar.jpg (610KB)
+      src: "assets/images/personal/chincharjuin.jpg", // alternative: sidebar.jpg (610KB)
       alt: "Portrait of Char Juin Chin",
       caption: "", // e.g. "me, probably" — leave "" to hide
     },
